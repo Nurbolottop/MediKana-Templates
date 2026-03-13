@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Медикана — Медицинская лаборатория и клиника</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск анализов, врачей, услуг...">
+          </div>
+          <button class="btn btn-secondary">Личный кабинет</button>
+          <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Современная медицина<br>для вашего здоровья</h1>
+          <p>Точная диагностика, опытные врачи, комфортная сдача анализов. Результаты онлайн через личный кабинет.</p>
+          <div class="hero-buttons">
+            <a href="catalog.html" class="btn btn-lg btn-accent">Записаться на анализы</a>
+            <a href="doctors.html" class="btn btn-lg btn-outline-white">Запись к врачу</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number">150+</div>
+              <div class="hero-stat-label">Видов анализов</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">50+</div>
+              <div class="hero-stat-label">Врачей-специалистов</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">12</div>
+              <div class="hero-stat-label">Центров в городе</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-content">
+            <h3>Популярные направления</h3>
+            <div class="hero-services">
+              <a href="catalog.html" class="hero-service">Общий анализ крови</a>
+              <a href="catalog.html" class="hero-service">Биохимия крови</a>
+              <a href="catalog.html" class="hero-service">Гормоны и иммунитет</a>
+              <a href="catalog.html" class="hero-service">Инфекции и ПЦР</a>
+              <a href="catalog.html" class="hero-service">Комплексные обследования</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Популярные услуги</h2>
+        <p class="section-subtitle">Проверьте своё здоровье с помощью наших комплексных программ</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="assets/images/services/complex.svg" alt="Комплексное обследование" class="service-card__image">
+          <h3>Комплексное обследование</h3>
+          <p>Полная диагностика организма за 1 визит</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/services/immunity.svg" alt="Проверка иммунитета" class="service-card__image">
+          <h3>Проверка иммунитета</h3>
+          <p>Оценка защитных сил организма</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/services/express.svg" alt="Экспресс-тестирование" class="service-card__image">
+          <h3>Экспресс-тестирование</h3>
+          <p>Результаты за 1–2 часа</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/services/home.svg" alt="Выезд на дом" class="service-card__image">
+          <h3>Выезд на дом</h3>
+          <p>Сдача анализов без посещения клиники</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Analyzes -->
+  <section class="section" style="background: var(--color-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Популярные анализы</h2>
+        <p class="section-subtitle">Часто заказываемые исследования с быстрыми сроками</p>
+      </div>
+      <div class="analyzes-grid">
+        <div class="product-card">
+          <div class="product-card-header">
+            <h3 class="product-card-title">Общий анализ крови (ОАК)</h3>
+            <span class="product-card-price">450 ₽</span>
+          </div>
+          <p class="product-card-meta">Срок: 1 день · Без подготовки</p>
+          <div class="product-card-footer">
+            <button class="btn btn-primary btn-sm">В корзину</button>
+            <a href="#" class="link-arrow">Подробнее →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-header">
+            <h3 class="product-card-title">Биохимия крови базовая</h3>
+            <span class="product-card-price">890 ₽</span>
+          </div>
+          <p class="product-card-meta">Срок: 1 день · Натощак</p>
+          <div class="product-card-footer">
+            <button class="btn btn-primary btn-sm">В корзину</button>
+            <a href="#" class="link-arrow">Подробнее →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-header">
+            <h3 class="product-card-title">Витамин D</h3>
+            <span class="product-card-price">1 200 ₽</span>
+          </div>
+          <p class="product-card-meta">Срок: 2 дня · Без подготовки</p>
+          <div class="product-card-footer">
+            <button class="btn btn-primary btn-sm">В корзину</button>
+            <a href="#" class="link-arrow">Подробнее →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-header">
+            <h3 class="product-card-title">Гликированный гемоглобин</h3>
+            <span class="product-card-price">650 ₽</span>
+          </div>
+          <p class="product-card-meta">Срок: 1 день · Без подготовки</p>
+          <div class="product-card-footer">
+            <button class="btn btn-primary btn-sm">В корзину</button>
+            <a href="#" class="link-arrow">Подробнее →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-header">
+            <h3 class="product-card-title">Щитовидная железа (ТТГ, Т4)</h3>
+            <span class="product-card-price">1 450 ₽</span>
+          </div>
+          <p class="product-card-meta">Срок: 1 день · Без подготовки</p>
+          <div class="product-card-footer">
+            <button class="btn btn-primary btn-sm">В корзину</button>
+            <a href="#" class="link-arrow">Подробнее →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-header">
+            <h3 class="product-card-title">COVID-19 ПЦР</h3>
+            <span class="badge badge-accent">Экспресс</span>
+            <span class="product-card-price">1 800 ₽</span>
+          </div>
+          <p class="product-card-meta">Срок: 4 часа · Без подготовки</p>
+          <div class="product-card-footer">
+            <button class="btn btn-primary btn-sm">В корзину</button>
+            <a href="#" class="link-arrow">Подробнее →</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--spacing-8);">
+        <a href="catalog.html" class="btn btn-outline btn-lg">Все анализы</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Наши преимущества</h2>
+        <p class="section-subtitle">Почему пациенты выбирают Медикана</p>
+      </div>
+      <div class="advantages-grid">
+        <div class="card feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="feature-content">
+            <h4>Быстрые результаты</h4>
+            <p>Большинство анализов готовы в течение 24 часов. Срочные исследования — за 2-4 часа.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="feature-content">
+            <h4>Точность исследований</h4>
+            <p>Современное оборудование и строгий контроль качества на всех этапах лабораторных работ.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="feature-content">
+            <h4>Опытные специалисты</h4>
+            <p>В штате клиники работают врачи с высшей категорией и многолетним опытом.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="feature-content">
+            <h4>Онлайн результаты</h4>
+            <p>Получайте результаты анализов в личном кабинете. Удобно, быстро, без повторных визитов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section" style="background: var(--color-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Новости и акции</h2>
+        <p class="section-subtitle">Актуальная информация о скидках и событиях</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="assets/images/news/news-1.svg" alt="Весенняя акция: скидка 20%" class="news-card__image">
+          <div class="news-content">
+            <div class="news-date">10 марта 2026</div>
+            <h3 class="news-title">Весенняя акция: скидка 20% на комплексное обследование</h3>
+            <p class="news-excerpt">Проверьте своё здоровье со скидкой. Акция действует до 30 апреля.</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <img src="assets/images/news/news-2.svg" alt="Новый филиал в районе Центральный" class="news-card__image">
+          <div class="news-content">
+            <div class="news-date">5 марта 2026</div>
+            <h3 class="news-title">Новый филиал открылся в районе Центральный</h3>
+            <p class="news-excerpt">Современное оборудование, удобная парковка, работаем ежедневно.</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <img src="assets/images/news/news-3.svg" alt="Новый тест на онкомаркеры" class="news-card__image">
+          <div class="news-content">
+            <div class="news-date">28 февраля 2026</div>
+            <h3 class="news-title">Новый тест на онкомаркеры: ранняя диагностика</h3>
+            <p class="news-excerpt">Расширен пакет исследований на выявление онкологических заболеваний.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Заботьтесь о здоровье сегодня</h2>
+        <p>Запишитесь на приём или консультацию прямо сейчас. Наши специалисты помогут подобрать нужные исследования.</p>
+        <a href="contacts.html" class="btn btn-lg">Записаться онлайн</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника. Точная диагностика, профессиональные врачи, комфортные условия.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+            <a href="promotions.html">Акции</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="#">Правила подготовки</a>
+            <a href="#">Лицензии</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <a href="mailto:info@medicana.ru">info@medicana.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Медикана. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

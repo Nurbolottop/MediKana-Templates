@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адреса филиалов — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/centers.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск анализов, врачей, услуг...">
+          </div>
+          <button class="btn btn-secondary">Личный кабинет</button>
+          <button class="menu-toggle" data-action="toggle-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link nav-link--active">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="centers-page-header">
+    <div class="container">
+      <nav class="centers-breadcrumb">
+        <div class="centers-breadcrumb__inner">
+          <a href="index.html" class="centers-breadcrumb__item">Главная</a>
+          <span class="centers-breadcrumb__separator">/</span>
+          <span class="centers-breadcrumb__current">Адреса филиалов</span>
+        </div>
+      </nav>
+      <h1 class="centers-page-title">Наши филиалы</h1>
+      <p class="centers-page-subtitle">Выберите удобный филиал, посмотрите доступные услуги и постройте маршрут.</p>
+    </div>
+  </section>
+
+  <!-- Toolbar -->
+  <div class="centers-toolbar">
+    <div class="container">
+      <div class="centers-toolbar__inner">
+        <div class="centers-toolbar__left">
+          <span class="centers-count">Найдено: <span class="centers-count__number">0</span> филиалов</span>
+          <div class="centers-view-toggle">
+            <button class="centers-view-btn centers-view-btn--active" data-view="map">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+              </svg>
+              Карта
+            </button>
+            <button class="centers-view-btn" data-view="list">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"/>
+                <line x1="8" y1="12" x2="21" y2="12"/>
+                <line x1="8" y1="18" x2="21" y2="18"/>
+                <line x1="3" y1="6" x2="3.01" y2="6"/>
+                <line x1="3" y1="12" x2="3.01" y2="12"/>
+                <line x1="3" y1="18" x2="3.01" y2="18"/>
+              </svg>
+              Список
+            </button>
+          </div>
+        </div>
+        <div class="centers-toolbar__right">
+          <div class="centers-search">
+            <svg class="centers-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" class="centers-search__input" placeholder="Поиск по адресу или названию...">
+          </div>
+          <button class="centers-reset-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+            Сбросить
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <div class="centers-layout">
+      <!-- Map -->
+      <div class="centers-map">
+        <div class="centers-map__placeholder">
+          <div class="centers-map__bg-pattern"></div>
+          <div class="centers-map__markers"></div>
+          <div class="centers-map__legend">
+            <div class="centers-map__legend-title">Легенда</div>
+            <div class="centers-map__legend-item">
+              <span class="centers-map__legend-dot centers-map__legend-dot--main"></span>
+              Главный филиал
+            </div>
+            <div class="centers-map__legend-item">
+              <span class="centers-map__legend-dot centers-map__legend-dot--regular"></span>
+              Обычный филиал
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="centers-sidebar">
+        <!-- Filters -->
+        <div class="centers-filters">
+          <h3 class="centers-filters__title">Фильтры</h3>
+          
+          <div class="centers-filter-group">
+            <h4 class="centers-filter-title">Услуги</h4>
+            <div class="centers-filter-options">
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="service" value="analyses">
+                <span>Анализы</span>
+              </label>
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="service" value="doctors">
+                <span>Врачи</span>
+              </label>
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="service" value="home_visit">
+                <span>Выезд на дом</span>
+              </label>
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="service" value="iv">
+                <span>Капельницы</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="centers-filter-group">
+            <h4 class="centers-filter-title">Удобства</h4>
+            <div class="centers-filter-options">
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="child" value="true">
+                <span>Приём детей</span>
+              </label>
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="parking" value="true">
+                <span>Парковка</span>
+              </label>
+              <label class="centers-filter-option">
+                <input type="checkbox" data-filter="urgent" value="true">
+                <span>Срочные анализы</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch List -->
+        <div class="centers-list"></div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- CTA Block -->
+  <section class="centers-cta">
+    <div class="container">
+      <div class="centers-cta__inner">
+        <div class="centers-cta__content">
+          <h2 class="centers-cta__title">Нужна помощь с выбором филиала?</h2>
+          <p class="centers-cta__text">Оставьте ваши контакты — наш специалист поможет подобрать ближайший филиал и ответит на все вопросы.</p>
+        </div>
+        <div class="centers-cta__form-wrapper">
+          <form class="centers-cta__form" data-ajax-form data-endpoint="assets/data/form-success.json" data-success-message="Заявка отправлена! Мы свяжемся с вами в ближайшее время.">
+            <h3 class="centers-cta__form-title">Получить консультацию</h3>
+            <div class="centers-cta__form-group">
+              <label>Ваше имя</label>
+              <input type="text" name="name" placeholder="Введите имя" required>
+            </div>
+            <div class="centers-cta__form-group">
+              <label>Телефон</label>
+              <input type="tel" name="phone" placeholder="+996 XXX XXX XXX" required>
+            </div>
+            <button type="submit" class="centers-cta__form-btn">Получить консультацию</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+            <a href="promotions.html">Акции</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/actions.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/centers-ajax.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

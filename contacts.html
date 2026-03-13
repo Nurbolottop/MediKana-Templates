@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск...">
+          </div>
+          <button class="btn btn-secondary">Личный кабинет</button>
+          <button class="menu-toggle">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link active">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" style="background: var(--color-white);">
+    <div class="container">
+      <h1 class="section-title">Контакты</h1>
+      <p class="section-subtitle">Свяжитесь с нами удобным способом</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card-title">Телефоны</h3>
+          <p class="card-text">
+            <strong>Единый номер:</strong> 8 (800) 123-45-67<br>
+            <strong>Бесплатный звонок по России</strong><br><br>
+            Приём звонков: ежедневно 7:00–20:00
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Электронная почта</h3>
+          <p class="card-text">
+            <strong>Общие вопросы:</strong> info@medicana.ru<br>
+            <strong>Запись на приём:</strong> zapisi@medicana.ru<br><br>
+            Ответим в течение 24 часов
+          </p>
+        </div>
+      </div>
+      <div class="card" style="margin-top: var(--spacing-6);">
+        <h3 class="card-title" style="text-align: center; margin-bottom: var(--spacing-6);">Форма обратной связи</h3>
+        <form style="max-width: 500px; margin: 0 auto;">
+          <div style="margin-bottom: var(--spacing-4);">
+            <label style="display: block; margin-bottom: var(--spacing-2); font-size: var(--font-size-sm); font-weight: 500;">Ваше имя</label>
+            <input type="text" class="input" placeholder="Введите имя">
+          </div>
+          <div style="margin-bottom: var(--spacing-4);">
+            <label style="display: block; margin-bottom: var(--spacing-2); font-size: var(--font-size-sm); font-weight: 500;">Телефон</label>
+            <input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div style="margin-bottom: var(--spacing-4);">
+            <label style="display: block; margin-bottom: var(--spacing-2); font-size: var(--font-size-sm); font-weight: 500;">Сообщение</label>
+            <textarea class="input" rows="4" placeholder="Опишите ваш вопрос"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/actions.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/contacts-ajax.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

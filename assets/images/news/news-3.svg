@@ -1,0 +1,15 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="newsGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2933;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#newsGrad3)"/>
+  <g transform="translate(200, 150)" opacity="0.4">
+    <rect x="-35" y="-40" width="70" height="50" rx="5" fill="white"/>
+    <circle cx="0" cy="25" r="20" fill="white"/>
+    <path d="M-20,-20 L-5,-20 M-20,-10 L5,-10" stroke="#1F2933" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui" font-size="12" fill="rgba(255,255,255,0.6)">News 3</text>
+</svg>

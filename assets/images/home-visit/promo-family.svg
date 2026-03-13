@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4"/>
+      <stop offset="100%" style="stop-color:#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Family/home illustration -->
+  <!-- Adult figure -->
+  <circle cx="150" cy="150" r="35" fill="#fde68a"/>
+  <rect x="120" y="185" width="60" height="90" rx="10" fill="#0F6B66" opacity="0.8"/>
+  <rect x="105" y="210" width="25" height="60" rx="5" fill="#0F6B66" opacity="0.8"/>
+  <rect x="170" y="210" width="25" height="60" rx="5" fill="#0F6B66" opacity="0.8"/>
+  
+  <!-- Child figure -->
+  <circle cx="250" cy="180" r="25" fill="#fde68a"/>
+  <rect x="230" y="205" width="40" height="55" rx="8" fill="#D72536" opacity="0.7"/>
+  <rect x="220" y="225" width="15" height="35" rx="4" fill="#D72536" opacity="0.7"/>
+  <rect x="265" y="225" width="15" height="35" rx="4" fill="#D72536" opacity="0.7"/>
+  
+  <!-- Elderly figure -->
+  <circle cx="350" cy="160" r="30" fill="#fde68a"/>
+  <rect x="325" y="190" width="50" height="80" rx="10" fill="#6b7280" opacity="0.7"/>
+  <rect x="310" y="215" width="20" height="55" rx="5" fill="#6b7280" opacity="0.7"/>
+  <rect x="370" y="215" width="20" height="55" rx="5" fill="#6b7280" opacity="0.7"/>
+  
+  <!-- Medical cross in background -->
+  <circle cx="400" cy="80" r="50" fill="#0F6B66" opacity="0.1"/>
+  <path d="M385 80 L415 80 M400 65 L400 95" stroke="#0F6B66" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+  
+  <!-- Home elements -->
+  <path d="M80 300 L80 250 L130 220 L180 250 L180 300" stroke="#0F6B66" stroke-width="2" fill="white" opacity="0.5"/>
+  <rect x="95" y="270" width="20" height="30" rx="2" fill="#e5e7eb" opacity="0.5"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="50" cy="350" r="15" fill="#0F6B66" opacity="0.1"/>
+  <circle cx="450" cy="50" r="20" fill="#D72536" opacity="0.1"/>
+  <circle cx="480" cy="350" r="25" fill="#0F6B66" opacity="0.08"/>
+  
+  <!-- Medical icons floating -->
+  <rect x="420" y="150" width="30" height="30" rx="6" fill="#0F6B66" opacity="0.2"/>
+  <circle cx="435" cy="165" r="8" fill="white" opacity="0.5"/>
+  
+  <rect x="60" y="100" width="25" height="25" rx="5" fill="#D72536" opacity="0.15"/>
+  <rect x="67" y="107" width="11" height="11" rx="2" fill="white" opacity="0.5"/>
+</svg>

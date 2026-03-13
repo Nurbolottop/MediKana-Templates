@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "data": {
+    "requestId": "HV-2026-001",
+    "status": "pending",
+    "message": "Заявка принята",
+    "operatorCallback": "в течение 15 минут"
+  },
+  "message": "Заявка на выезд успешно создана. Наш оператор свяжется с вами в ближайшее время.",
+  "errors": null
+}

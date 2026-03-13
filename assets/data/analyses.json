@@ -1,0 +1,167 @@
+{
+  "success": true,
+  "data": {
+    "analyses": [
+      {
+        "id": "A-001",
+        "code": "CBC",
+        "name": "Общий анализ крови",
+        "category": "gematology",
+        "price": 1500,
+        "old_price": 1800,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Полная картина крови: лейкоциты, эритроциты, гемоглобин, тромбоциты, СОЭ",
+        "is_popular": true,
+        "is_available_home": true
+      },
+      {
+        "id": "A-002",
+        "code": "VIT-D",
+        "name": "Витамин D",
+        "category": "vitamins",
+        "price": 3200,
+        "duration": "1 день",
+        "duration_hours": 24,
+        "description": "Определение уровня витамина D в организме для оценки иммунитета и здоровья костей",
+        "is_popular": true,
+        "is_available_home": false
+      },
+      {
+        "id": "A-003",
+        "code": "FERR",
+        "name": "Ферритин",
+        "category": "vitamins",
+        "price": 2800,
+        "duration": "1 день",
+        "duration_hours": 24,
+        "description": "Оценка запасов железа в организме, важен при подозрении на анемию",
+        "is_popular": true,
+        "is_available_home": false
+      },
+      {
+        "id": "A-004",
+        "code": "TSH",
+        "name": "ТТГ (тиреотропный гормон)",
+        "category": "hormones",
+        "price": 1900,
+        "duration": "1 день",
+        "duration_hours": 24,
+        "description": "Основной тест для оценки функции щитовидной железы",
+        "is_popular": true,
+        "is_available_home": false
+      },
+      {
+        "id": "A-005",
+        "code": "GLUC",
+        "name": "Глюкоза",
+        "category": "biochemistry",
+        "price": 650,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Определение уровня сахара в крови, базовый тест для диабета",
+        "is_popular": false,
+        "is_available_home": true
+      },
+      {
+        "id": "A-006",
+        "code": "UA",
+        "name": "Общий анализ мочи",
+        "category": "urine",
+        "price": 1200,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Комплексная оценка состояния мочевыделительной системы",
+        "is_popular": false,
+        "is_available_home": true
+      },
+      {
+        "id": "A-007",
+        "code": "CRP",
+        "name": "С-реактивный белок",
+        "category": "biochemistry",
+        "price": 1800,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Маркер воспаления, используется при подозрении на инфекции и воспалительные процессы",
+        "is_popular": false,
+        "is_available_home": false
+      },
+      {
+        "id": "A-008",
+        "code": "ESR",
+        "name": "Скорость оседания эритроцитов (СОЭ)",
+        "category": "gematology",
+        "price": 450,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Неспецифический маркер воспаления в организме",
+        "is_popular": false,
+        "is_available_home": true
+      },
+      {
+        "id": "A-009",
+        "code": "T4",
+        "name": "Свободный Т4",
+        "category": "hormones",
+        "price": 2100,
+        "duration": "1 день",
+        "duration_hours": 24,
+        "description": "Гормон щитовидной железы, уточняет диагноз при нарушениях функции ТТГ",
+        "is_popular": false,
+        "is_available_home": false
+      },
+      {
+        "id": "A-010",
+        "code": "LH",
+        "name": "ЛГ (лютеинизирующий гормон)",
+        "category": "hormones",
+        "price": 1900,
+        "duration": "1 день",
+        "duration_hours": 24,
+        "description": "Гормон репродуктивной системы, важен для оценки фертильности",
+        "is_popular": false,
+        "is_available_home": false
+      },
+      {
+        "id": "A-011",
+        "code": "ALT",
+        "name": "АЛТ (аланинаминотрансфераза)",
+        "category": "biochemistry",
+        "price": 750,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Фермент печени, маркер её состояния",
+        "is_popular": false,
+        "is_available_home": true
+      },
+      {
+        "id": "A-012",
+        "code": "CREA",
+        "name": "Креатинин",
+        "category": "biochemistry",
+        "price": 850,
+        "duration": "1-2 часа",
+        "duration_hours": 2,
+        "description": "Основной показатель функции почек",
+        "is_popular": false,
+        "is_available_home": true
+      }
+    ],
+    "categories": [
+      { "code": "all", "name": "Все анализы", "count": 12 },
+      { "code": "gematology", "name": "Гематология", "count": 2 },
+      { "code": "biochemistry", "name": "Биохимия", "count": 4 },
+      { "code": "hormones", "name": "Гормоны", "count": 4 },
+      { "code": "vitamins", "name": "Витамины", "count": 2 },
+      { "code": "urine", "name": "Анализы мочи", "count": 1 }
+    ],
+    "durations": [
+      { "code": "fast", "name": "Экспресс (до 2 часов)", "hours_max": 2 },
+      { "code": "day", "name": "1 день", "hours_max": 24 },
+      { "code": "week", "name": "3 дня", "hours_max": 72 }
+    ]
+  },
+  "message": "",
+  "errors": null
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Общий анализ крови (ОАК) — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/analysis-detail.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск анализов...">
+          </div>
+          <button class="btn btn-secondary">Личный кабинет</button>
+          <button class="menu-toggle">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link active">Анализы</a>
+          <a href="doctors.html" class="nav-link">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-inner">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <a href="catalog.html">Каталог анализов</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Общий анализ крови</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Analysis Hero -->
+  <section class="analysis-hero">
+    <div class="container analysis-hero__layout">
+      <div class="analysis-main">
+        <span class="analysis-code">Код: A-001</span>
+        <h1 class="analysis-title">Общий анализ крови (ОАК)</h1>
+        <p class="analysis-subtitle">
+          Базовое лабораторное исследование для оценки общего состояния организма, работы кроветворной системы и выявления воспалительных процессов.
+        </p>
+
+        <div class="analysis-tags">
+          <span class="analysis-tag">Результат за 1 день</span>
+          <span class="analysis-tag">Венозная кровь</span>
+          <span class="analysis-tag">Натощак желательно</span>
+        </div>
+
+        <div class="analysis-highlights">
+          <div class="analysis-highlight">
+            <span class="analysis-highlight__label">Срок выполнения</span>
+            <strong>1 день</strong>
+          </div>
+          <div class="analysis-highlight">
+            <span class="analysis-highlight__label">Биоматериал</span>
+            <strong>Венозная кровь</strong>
+          </div>
+          <div class="analysis-highlight">
+            <span class="analysis-highlight__label">Подготовка</span>
+            <strong>Минимальная</strong>
+          </div>
+        </div>
+
+        <div class="analysis-tabs" data-tabs>
+          <button class="analysis-tab-btn is-active" type="button" data-tab="description">Описание</button>
+          <button class="analysis-tab-btn" type="button" data-tab="composition">Состав комплекса</button>
+          <button class="analysis-tab-btn" type="button" data-tab="preparation">Подготовка к анализу</button>
+        </div>
+      </div>
+
+      <aside class="analysis-summary">
+        <div class="analysis-summary__card">
+          <div class="analysis-summary__price">450 ₽</div>
+          <ul class="analysis-summary__list">
+            <li>Срок: 1 день</li>
+            <li>Материал: венозная кровь</li>
+            <li>Результат онлайн</li>
+            <li>Без направления</li>
+          </ul>
+          <button class="btn btn-primary analysis-summary__button">Заказать анализ</button>
+          <button class="btn btn-outline analysis-summary__button">Записаться на забор</button>
+          <p class="analysis-summary__note">Точную стоимость и условия уточняйте при оформлении. Скидки по программе лояльности.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Description Section -->
+  <section id="description" class="analysis-section">
+    <div class="container">
+      <h2 class="analysis-section__title">Описание анализа</h2>
+      <div class="analysis-section__content">
+        <p>Общий анализ крови (ОАК) — это базовое лабораторное исследование, которое позволяет оценить общее состояние здоровья человека, выявить признаки воспалительных процессов, анемии, инфекционных заболеваний и нарушений работы иммунной системы.</p>
+        <p>Это один из самых часто назначаемых анализов в медицинской практике, поскольку он дает врачу первичную информацию о функционировании организма и позволяет определить направление дальнейшего обследования.</p>
+        <p>Исследование проводится с помощью современного гематологического анализатора, который определяет количественные показатели форменных элементов крови. Результаты доступны уже на следующий день после сдачи материала.</p>
+      </div>
+
+      <div class="analysis-split-cards">
+        <a class="analysis-split-card analysis-split-card--desc" href="#" aria-label="Подробное описание">
+          <div class="analysis-split-card__content">
+            <div class="analysis-split-card__title">Подробное описание</div>
+            <div class="analysis-split-card__subtitle">Helixbook</div>
+          </div>
+          <div class="analysis-split-card__action">→</div>
+        </a>
+        <a class="analysis-split-card analysis-split-card--sample" href="#" aria-label="Пример результата">
+          <div class="analysis-split-card__content">
+            <div class="analysis-split-card__title">Пример результата</div>
+            <div class="analysis-split-card__subtitle">Скачать файл</div>
+          </div>
+          <div class="analysis-split-card__action">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Composition Section -->
+  <section id="composition" class="analysis-section is-hidden">
+    <div class="container">
+      <h2 class="analysis-section__title">Состав комплекса</h2>
+      <ul class="analysis-list">
+        <li><strong>Эритроциты (RBC)</strong> — количество красных кровяных телец</li>
+        <li><strong>Гемоглобин (HGB)</strong> — перенос кислорода в тканях</li>
+        <li><strong>Гематокрит (HCT)</strong> — соотношение клеток и плазмы</li>
+        <li><strong>Лейкоциты (WBC)</strong> — иммунная защита</li>
+        <li><strong>Тромбоциты (PLT)</strong> — свертывание крови</li>
+        <li><strong>Лейкоцитарная формула</strong> — соотношение разных типов лейкоцитов</li>
+        <li><strong>СОЭ</strong> — маркер воспалительных процессов</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Related Analyses -->
+  <section id="related" class="related-analyses">
+    <div class="container">
+      <h2 class="analysis-section__title">Похожие анализы</h2>
+      <div class="related-analyses__grid">
+        <!-- Related 1: СОЭ -->
+        <div class="analysis-card--compact">
+          <span class="analysis-card__code">A-101</span>
+          <h3 class="analysis-card__title">СОЭ (скорость оседания эритроцитов)</h3>
+          <div class="analysis-card__meta">Срок: 1 день</div>
+          <div class="analysis-card__footer">
+            <div class="analysis-card__price">350 ₽</div>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Related 2: СРБ -->
+        <div class="analysis-card--compact">
+          <span class="analysis-card__code">A-011</span>
+          <h3 class="analysis-card__title">СРБ (C-реактивный белок)</h3>
+          <div class="analysis-card__meta">Срок: 1 день</div>
+          <div class="analysis-card__footer">
+            <div class="analysis-card__price">680 ₽</div>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Related 3: Ферритин -->
+        <div class="analysis-card--compact">
+          <span class="analysis-card__code">A-003</span>
+          <h3 class="analysis-card__title">Ферритин</h3>
+          <div class="analysis-card__meta">Срок: 1 день</div>
+          <div class="analysis-card__footer">
+            <div class="analysis-card__price">850 ₽</div>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Related 4: ОАМ -->
+        <div class="analysis-card--compact">
+          <span class="analysis-card__code">A-006</span>
+          <h3 class="analysis-card__title">Общий анализ мочи</h3>
+          <div class="analysis-card__meta">Срок: 1 день</div>
+          <div class="analysis-card__footer">
+            <div class="analysis-card__price">420 ₽</div>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="analysis-cta">
+    <div class="container">
+      <div class="cta-form">
+        <h2>Нужна помощь с выбором анализа?</h2>
+        <p>Оставьте заявку, и мы поможем подобрать нужное исследование или запишем вас на сдачу в удобное время.</p>
+        <form class="analysis-cta__form">
+          <div class="form-row">
+            <input type="text" class="form-input" placeholder="Ваше имя" required>
+            <input type="tel" class="form-input" placeholder="Телефон" required>
+          </div>
+          <button type="submit" class="btn btn-accent">Получить консультацию</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника. Точная диагностика, профессиональные врачи, комфортные условия.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+            <a href="promotions.html">Акции</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="#">Правила подготовки</a>
+            <a href="#">Лицензии</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <a href="mailto:info@medicana.ru">info@medicana.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/actions.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/analysis-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Врачи — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск врачей...">
+          </div>
+          <button class="btn btn-secondary">Личный кабинет</button>
+          <button class="menu-toggle">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link active">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" style="background: var(--color-white);">
+    <div class="container">
+      <h1 class="section-title">Наши врачи</h1>
+      <p class="section-subtitle">Опытные специалисты с высшей категорией</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="assets/images/doctors/doctor-1.svg" alt="Иванова Елена С. - Терапевт" class="doctor-card__image">
+          <div style="padding: var(--spacing-5);">
+            <h3 class="card-title">Иванова Елена С.</h3>
+            <p class="card-text">Терапевт, стаж 15 лет</p>
+            <button class="btn btn-primary btn-sm" style="margin-top: var(--spacing-4);">Записаться</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/doctors/doctor-2.svg" alt="Петров Андрей М. - Кардиолог" class="doctor-card__image">
+          <div style="padding: var(--spacing-5);">
+            <h3 class="card-title">Петров Андрей М.</h3>
+            <p class="card-text">Кардиолог, стаж 20 лет</p>
+            <button class="btn btn-primary btn-sm" style="margin-top: var(--spacing-4);">Записаться</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/doctors/doctor-3.svg" alt="Сидорова Мария В. - Эндокринолог" class="doctor-card__image">
+          <div style="padding: var(--spacing-5);">
+            <h3 class="card-title">Сидорова Мария В.</h3>
+            <p class="card-text">Эндокринолог, стаж 12 лет</p>
+            <button class="btn btn-primary btn-sm" style="margin-top: var(--spacing-4);">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

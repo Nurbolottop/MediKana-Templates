@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "data": {
+    "promotions": [
+      {
+        "id": 1,
+        "title": "Скидка 20% на комплексное обследование",
+        "description": "Полная диагностика организма с весенней скидкой. Включает более 50 показателей.",
+        "discount": "20%",
+        "valid_until": "2026-04-30",
+        "code": "COMPLEX20",
+        "image": "promo-1.svg",
+        "is_active": true
+      },
+      {
+        "id": 2,
+        "title": "Витамин D + Кальций за 3500 ₽",
+        "description": "Специальное предложение на проверку здоровья костей и иммунитета. Экономия 1500 ₽.",
+        "discount": "30%",
+        "valid_until": "2026-05-15",
+        "code": "VITAMINS",
+        "image": "promo-2.svg",
+        "is_active": true
+      },
+      {
+        "id": 3,
+        "title": "Бесплатная консультация врача",
+        "description": "При сдаче любых 3 анализов — консультация терапевта в подарок.",
+        "discount": "100%",
+        "valid_until": "2026-06-30",
+        "code": "CONSULTFREE",
+        "image": "promo-3.svg",
+        "is_active": true
+      }
+    ]
+  },
+  "message": "",
+  "errors": null
+}

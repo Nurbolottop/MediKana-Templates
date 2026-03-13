@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запись к врачу онлайн — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/doctors.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск анализов, врачей, услуг...">
+          </div>
+          <button class="btn btn-primary">Личный кабинет</button>
+          <button class="menu-toggle"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link active">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb__inner">
+        <a href="index.html" class="breadcrumb__item">Главная</a>
+        <span class="breadcrumb__separator">/</span>
+        <span class="breadcrumb__current">Запись к врачу</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="booking-page-header">
+    <div class="container">
+      <h1 class="booking-page-title">Запись к врачу онлайн</h1>
+      <p class="booking-page-subtitle">Выберите специализацию, дату и филиал, чтобы увидеть доступных врачей и время приема.</p>
+    </div>
+  </section>
+
+  <!-- Filters Panel -->
+  <section class="booking-filters">
+    <div class="container">
+      <div class="booking-filters__row">
+        <div class="booking-filter">
+          <label class="booking-filter__label">Специализация</label>
+          <select class="booking-filter__control" id="filter-specialty">
+            <option value="">Выберите специализацию</option>
+            <option value="therapist">Терапевт</option>
+            <option value="cardiologist">Кардиолог</option>
+            <option value="neurologist">Невролог</option>
+            <option value="endocrinologist">Эндокринолог</option>
+            <option value="pediatrician">Педиатр</option>
+            <option value="gynecologist">Гинеколог</option>
+          </select>
+        </div>
+        <div class="booking-filter">
+          <label class="booking-filter__label">Дата приема</label>
+          <input type="date" class="booking-filter__control" id="filter-date">
+        </div>
+        <div class="booking-filter">
+          <label class="booking-filter__label">Филиал</label>
+          <select class="booking-filter__control" id="filter-branch">
+            <option value="">Все филиалы</option>
+            <option value="center">Центральный филиал</option>
+            <option value="south">Южный филиал</option>
+            <option value="east">Восточный филиал</option>
+          </select>
+        </div>
+        <div class="booking-filter booking-filter--checkbox">
+          <label class="booking-filter__checkbox">
+            <input type="checkbox" id="filter-child">
+            <span class="booking-filter__checkmark"></span>
+            <span class="booking-filter__checkbox-label">Детский врач</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="booking-results">
+    <div class="container">
+      <!-- Loading State -->
+      <div class="booking-loading" id="loading-state" style="display: none;">
+        <div class="booking-skeleton-card">
+          <div class="booking-skeleton booking-skeleton--photo"></div>
+          <div class="booking-skeleton-content">
+            <div class="booking-skeleton booking-skeleton--line" style="width: 60%"></div>
+            <div class="booking-skeleton booking-skeleton--line" style="width: 40%"></div>
+            <div class="booking-skeleton booking-skeleton--line" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="booking-skeleton-card">
+          <div class="booking-skeleton booking-skeleton--photo"></div>
+          <div class="booking-skeleton-content">
+            <div class="booking-skeleton booking-skeleton--line" style="width: 50%"></div>
+            <div class="booking-skeleton booking-skeleton--line" style="width: 70%"></div>
+            <div class="booking-skeleton booking-skeleton--line" style="width: 45%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div class="booking-empty" id="empty-state">
+        <div class="booking-empty__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          </svg>
+        </div>
+        <h3 class="booking-empty__title">Выберите специализацию</h3>
+        <p class="booking-empty__text">Чтобы увидеть доступных врачей и время приема, выберите специализацию в фильтрах выше.</p>
+      </div>
+
+      <!-- Doctors List -->
+      <div class="doctors-booking-list" id="doctors-list"></div>
+    </div>
+  </section>
+
+  <!-- CTA Block -->
+  <section class="booking-cta">
+    <div class="container">
+      <div class="booking-cta__content">
+        <h2 class="booking-cta__title">Не нашли нужного врача?</h2>
+        <p class="booking-cta__text">Позвоните нам и мы поможем подобрать специалиста</p>
+        <a href="tel:+996312000000" class="booking-cta__phone">+996 (312) 00-00-00</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника в Бишкеке.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="booking-modal" id="booking-modal">
+    <div class="booking-modal__overlay"></div>
+    <div class="booking-modal__content">
+      <button class="booking-modal__close" id="modal-close">&times;</button>
+      <h3 class="booking-modal__title">Подтвердите запись</h3>
+      <div class="booking-modal__info" id="modal-info"></div>
+      <form class="booking-form" id="booking-form">
+        <div class="booking-form__field">
+          <label>Ваше имя</label>
+          <input type="text" name="name" required placeholder="Введите имя">
+        </div>
+        <div class="booking-form__field">
+          <label>Телефон</label>
+          <input type="tel" name="phone" required placeholder="+996 XXX XXX XXX">
+        </div>
+        <div class="booking-form__field">
+          <label>Комментарий (опционально)</label>
+          <textarea name="comment" rows="3" placeholder="Опишите симптомы или вопросы"></textarea>
+        </div>
+        <button type="submit" class="booking-form__submit">Записаться</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/doctors-booking.js"></script>
+</body>
+</html>

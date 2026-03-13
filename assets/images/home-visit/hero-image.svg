@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0fdf4"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="500" cy="80" r="60" fill="#0F6B66" opacity="0.1"/>
+  <circle cx="100" cy="320" r="80" fill="#D72536" opacity="0.05"/>
+  
+  <!-- House outline -->
+  <path d="M150 280 L150 200 L220 150 L290 200 L290 280" stroke="#0F6B66" stroke-width="3" fill="white"/>
+  <rect x="170" y="230" width="40" height="50" rx="4" fill="#e5e7eb"/>
+  <rect x="230" y="230" width="40" height="50" rx="4" fill="#e5e7eb"/>
+  <path d="M210 120 L220 150 L200 150 Z" fill="#D72536"/>
+  
+  <!-- Medical cross -->
+  <rect x="260" y="100" width="80" height="80" rx="12" fill="#0F6B66"/>
+  <rect x="290" y="115" width="20" height="50" rx="4" fill="white"/>
+  <rect x="275" y="130" width="50" height="20" rx="4" fill="white"/>
+  
+  <!-- Nurse/doctor figure -->
+  <circle cx="380" cy="180" r="40" fill="#fde68a"/>
+  <rect x="350" y="220" width="60" height="80" rx="8" fill="white" stroke="#0F6B66" stroke-width="2"/>
+  <rect x="340" y="240" width="20" height="50" rx="4" fill="white" stroke="#0F6B66" stroke-width="2"/>
+  <rect x="400" y="240" width="20" height="50" rx="4" fill="white" stroke="#0F6B66" stroke-width="2"/>
+  
+  <!-- Stethoscope -->
+  <path d="M370 250 Q370 280 390 280 Q410 280 410 250" stroke="#374151" stroke-width="3" fill="none"/>
+  <circle cx="390" cy="285" r="8" fill="#9ca3af"/>
+  
+  <!-- Medical bag -->
+  <rect x="430" y="240" width="50" height="40" rx="8" fill="#0F6B66"/>
+  <path d="M445 240 L445 230 Q455 220 465 230 L465 240" stroke="#0F6B66" stroke-width="3" fill="none"/>
+  <rect x="448" y="255" width="14" height="14" rx="2" fill="white"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="100" r="8" fill="#0F6B66" opacity="0.3"/>
+  <circle cx="70" cy="120" r="5" fill="#D72536" opacity="0.3"/>
+  <circle cx="550" cy="300" r="10" fill="#0F6B66" opacity="0.2"/>
+  <circle cx="520" cy="330" r="6" fill="#D72536" opacity="0.2"/>
+  
+  <!-- Text placeholder -->
+  <text x="300" y="370" text-anchor="middle" font-family="system-ui" font-size="14" fill="#6b7280">Выезд на дом</text>
+</svg>

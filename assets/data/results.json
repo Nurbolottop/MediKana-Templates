@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "order_id": "ORD-2026-001234",
+        "patient_name": "Иванов Иван Иванович",
+        "date_of_birth": "1985-05-15",
+        "analysis_date": "2026-03-10",
+        "status": "ready",
+        "analyses": [
+          {
+            "name": "Общий анализ крови",
+            "result": "В пределах нормы",
+            "values": [
+              { "name": "Гемоглобин", "value": "142", "unit": "г/л", "reference": "130-160", "status": "normal" },
+              { "name": "Лейкоциты", "value": "6.2", "unit": "10^9/л", "reference": "4.0-9.0", "status": "normal" },
+              { "name": "Тромбоциты", "value": "250", "unit": "10^9/л", "reference": "150-400", "status": "normal" }
+            ]
+          },
+          {
+            "name": "Глюкоза",
+            "result": "В пределах нормы",
+            "values": [
+              { "name": "Глюкоза", "value": "5.2", "unit": "ммоль/л", "reference": "3.9-6.1", "status": "normal" }
+            ]
+          }
+        ]
+      },
+      {
+        "order_id": "ORD-2026-001235",
+        "patient_name": "Петрова Мария Сергеевна",
+        "date_of_birth": "1990-08-22",
+        "analysis_date": "2026-03-11",
+        "status": "processing",
+        "analyses": [
+          {
+            "name": "ТТГ",
+            "result": "В обработке",
+            "values": []
+          }
+        ]
+      }
+    ]
+  },
+  "message": "",
+  "errors": null
+}

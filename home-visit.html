@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выезд на дом — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/home-visit.css">
+</head>
+<body class="home-visit-page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск анализов, врачей, услуг...">
+          </div>
+          <button class="btn btn-secondary">Личный кабинет</button>
+          <button class="menu-toggle" data-action="toggle-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link nav-link--active">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="hv-breadcrumb">
+    <div class="container">
+      <div class="hv-breadcrumb__inner">
+        <a href="index.html" class="hv-breadcrumb__item">Главная</a>
+        <span class="hv-breadcrumb__separator">/</span>
+        <span class="hv-breadcrumb__current">Выезд на дом</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hv-hero">
+    <div class="container">
+      <div class="hv-hero__layout">
+        <div class="hv-hero__content">
+          <div class="hv-hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            Медицинский выезд на дом
+          </div>
+          <h1 class="hv-hero__title">
+            Выезд медсестры или <span class="hv-hero__title-accent">врача на дом</span>
+          </h1>
+          <p class="hv-hero__text">
+            Сдавайте анализы и получайте медицинские услуги там, где удобно вам — дома или на работе. Без очередей и стресса.
+          </p>
+          <div class="hv-hero__note">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            Для взрослых и детей от 0 лет
+          </div>
+          <div class="hv-hero__actions">
+            <button class="hv-hero__btn hv-hero__btn-primary" data-action="scroll-to" data-target="hv-form-section">
+              Оформить выезд
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+            <button class="hv-hero__btn hv-hero__btn-secondary" data-action="scroll-to" data-target="hv-pricing">
+              Стоимость услуг
+            </button>
+          </div>
+        </div>
+        <div class="hv-hero__visual">
+          <div class="hv-hero__image-wrapper">
+            <img src="assets/images/home-visit/hero-image.svg" alt="Выезд на дом" class="hv-hero__image">
+          </div>
+          <div class="hv-hero__floating-badge">
+            <h4>Работаем со всеми</h4>
+            <p>Дети, взрослые и пожилые пациенты</p>
+          </div>
+          <div class="hv-hero__stats">
+            <div class="hv-hero__stats-number">15 мин</div>
+            <div class="hv-hero__stats-label">Среднее ожидание</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section class="hv-steps">
+    <div class="container">
+      <div class="hv-steps__header">
+        <span class="hv-steps__label">Как это работает</span>
+        <h2 class="hv-steps__title">Оформите выезд за 4 простых шага</h2>
+        <p class="hv-steps__subtitle">Процесс от заявки до результата</p>
+      </div>
+      <div class="hv-steps__grid">
+        <div class="hv-step">
+          <div class="hv-step__number">1</div>
+          <div class="hv-step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <line x1="9" y1="9" x2="15" y2="9"/>
+              <line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+          </div>
+          <h3 class="hv-step__title">Выберите услугу</h3>
+          <p class="hv-step__text">Анализы, капельница, консультация врача или ЭКГ</p>
+        </div>
+        <div class="hv-step">
+          <div class="hv-step__number">2</div>
+          <div class="hv-step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3 class="hv-step__title">Укажите адрес</h3>
+          <p class="hv-step__text">Выберите удобный день и время визита специалиста</p>
+        </div>
+        <div class="hv-step">
+          <div class="hv-step__number">3</div>
+          <div class="hv-step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3 class="hv-step__title">Приедем к вам</h3>
+          <p class="hv-step__text">Медсестра или врач приедет со всем необходимым</p>
+        </div>
+        <div class="hv-step">
+          <div class="hv-step__number">4</div>
+          <div class="hv-step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="hv-step__title">Получите результат</h3>
+          <p class="hv-step__text">Результаты в личном кабинете или у оператора</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="hv-pricing" id="hv-pricing">
+    <div class="container">
+      <div class="hv-pricing__header">
+        <h2 class="hv-pricing__title">Стоимость выезда мобильной службы</h2>
+        <p class="hv-pricing__subtitle">Прозрачные цены без скрытых платежей</p>
+      </div>
+      <div class="hv-pricing__card">
+        <table class="hv-pricing__table">
+          <thead class="hv-pricing__thead">
+            <tr>
+              <th>Зона выезда</th>
+              <th>Стоимость выезда</th>
+              <th>Условия бесплатного выезда</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hv-pricing__row">
+              <td class="hv-pricing__cell" data-label="Зона:">
+                <span class="hv-pricing__zone">В пределах города</span>
+              </td>
+              <td class="hv-pricing__cell" data-label="Стоимость:">
+                <strong>300 сом</strong>
+                <small>Бесплатно при заказе от 700 сом</small>
+              </td>
+              <td class="hv-pricing__cell" data-label="Условия:">
+                Стандартный выезд в течение 2-4 часов
+              </td>
+            </tr>
+            <tr class="hv-pricing__row">
+              <td class="hv-pricing__cell" data-label="Зона:">
+                <span class="hv-pricing__zone">До 10 км от города</span>
+              </td>
+              <td class="hv-pricing__cell" data-label="Стоимость:">
+                <strong>500 сом</strong>
+                <small>Бесплатно при заказе от 1500 сом</small>
+              </td>
+              <td class="hv-pricing__cell" data-label="Условия:">
+                Пригород и ближайшие населённые пункты
+              </td>
+            </tr>
+            <tr class="hv-pricing__row">
+              <td class="hv-pricing__cell" data-label="Зона:">
+                <span class="hv-pricing__zone">До 20 км от города</span>
+              </td>
+              <td class="hv-pricing__cell" data-label="Стоимость:">
+                <strong>800 сом</strong>
+                <small>Бесплатно при заказе от 3000 сом</small>
+              </td>
+              <td class="hv-pricing__cell" data-label="Условия:">
+                Отдалённые районы по предварительной записи
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="hv-pricing__note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="16" x2="12" y2="12"/>
+          <line x1="12" y1="8" x2="12.01" y2="8"/>
+        </svg>
+        <p>Забор биоматериала выполняется у взрослых и детей любого возраста. Срочный выезд в день заказа оплачивается отдельно.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Pricing -->
+  <section class="hv-services">
+    <div class="container">
+      <div class="hv-services__grid">
+        <div class="hv-service-card">
+          <h3 class="hv-service-card__title">Постановка капельницы</h3>
+          <div class="hv-service-card__list">
+            <div class="hv-service-item">
+              <div class="hv-service-item__info">
+                <h4>До 1 часа / до 250 мл</h4>
+                <span>Стандартная капельница</span>
+              </div>
+              <div class="hv-service-item__price">2 200 сом</div>
+            </div>
+            <div class="hv-service-item">
+              <div class="hv-service-item__info">
+                <h4>Более 1 часа / более 250 мл</h4>
+                <span>Длительная инфузия</span>
+              </div>
+              <div class="hv-service-item__price">3 200 сом</div>
+            </div>
+          </div>
+        </div>
+        <div class="hv-service-card">
+          <h3 class="hv-service-card__title">Приём врача-терапевта</h3>
+          <div class="hv-service-card__list">
+            <div class="hv-service-item">
+              <div class="hv-service-item__info">
+                <h4>Первичный приём</h4>
+                <span>Осмотр, консультация, рекомендации</span>
+              </div>
+              <div class="hv-service-item__price">2 800 сом</div>
+            </div>
+            <div class="hv-service-item">
+              <div class="hv-service-item__info">
+                <h4>Повторный приём</h4>
+                <span>Контрольный осмотр</span>
+              </div>
+              <div class="hv-service-item__price">2 400 сом</div>
+            </div>
+            <div class="hv-service-item">
+              <div class="hv-service-item__info">
+                <h4>Экспресс ЭКГ</h4>
+                <span>Снятие и расшифровка</span>
+              </div>
+              <div class="hv-service-item__price">1 500 сом</div>
+            </div>
+          </div>
+          <div class="hv-service-card__footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <p>Приём включает осмотр и базовые рекомендации специалиста</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+  <section class="hv-promo">
+    <div class="container">
+      <div class="hv-promo__layout">
+        <div class="hv-promo__content">
+          <span class="hv-promo__label">Дома или на работе</span>
+          <h2 class="hv-promo__title">Сдавайте анализы там, где удобно вам</h2>
+          <p class="hv-promo__text">Наши специалисты приедут в удобное время — утром, днём или вечером. Все процедуры выполняются с соблюдением стерильности и медицинских стандартов.</p>
+          <div class="hv-promo__features">
+            <div class="hv-promo__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Быстрый выезд</span>
+            </div>
+            <div class="hv-promo__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>Безопасность</span>
+            </div>
+            <div class="hv-promo__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>Ежедневно 07:00-21:00</span>
+            </div>
+          </div>
+          <button class="hv-promo__btn" data-action="scroll-to" data-target="hv-form-section">
+            Оформить выезд
+          </button>
+        </div>
+        <div class="hv-promo__visual">
+          <div class="hv-promo__image-wrapper">
+            <img src="assets/images/home-visit/promo-family.svg" alt="Медицинский выезд" class="hv-promo__image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="hv-form-section" id="hv-form-section">
+    <div class="container">
+      <div class="hv-form-section__layout">
+        <div class="hv-form-card">
+          <h3 class="hv-form-card__title">Оформить заявку</h3>
+          <p class="hv-form-card__subtitle">Заполните форму — мы перезвоним для подтверждения</p>
+          <form class="hv-form" data-ajax-form data-endpoint="assets/data/form-success.json" data-success-message="Заявка успешно отправлена! Наш оператор свяжется с вами в ближайшее время." data-reset-on-success="true">
+            <div class="hv-form__group">
+              <label>Ваше имя <span>*</span></label>
+              <input type="text" name="name" class="hv-form__input" placeholder="Введите ваше ФИО" required>
+            </div>
+            <div class="hv-form__group">
+              <label>Город <span>*</span></label>
+              <select name="city" class="hv-form__select" required>
+                <option value="">Выберите город</option>
+                <option value="bishkek">Бишкек</option>
+                <option value="osh">Ош</option>
+                <option value="other">Другой</option>
+              </select>
+            </div>
+            <div class="hv-form__group">
+              <label>Телефон <span>*</span></label>
+              <input type="tel" name="phone" class="hv-form__input" placeholder="+996 XXX XXX XXX" required>
+            </div>
+            <div class="hv-form__group">
+              <label>Комментарий</label>
+              <textarea name="comment" class="hv-form__textarea" placeholder="Опишите необходимую услугу и удобное время"></textarea>
+            </div>
+            <div class="hv-form__checkbox">
+              <input type="checkbox" name="consent" id="consent" required>
+              <label for="consent">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="hv-form__submit">
+              Заказать звонок
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="hv-form__aside">
+          <h2 class="hv-form__aside-title">Закажите <span>обратный звонок</span></h2>
+          <p class="hv-form__aside-text">Наш оператор свяжется с вами для оформления и подтверждения заявки. Обычно перезваниваем в течение 15 минут.</p>
+          <div class="hv-form__contact-block">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Телефон горячей линии
+            </h4>
+            <p>8 (800) 123-45-67</p>
+          </div>
+          <div class="hv-form__features">
+            <div class="hv-form__feature">
+              <div class="hv-form__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="hv-form__feature-text">
+                <h4>Быстрый отклик</h4>
+                <p>Перезвоним за 15 минут</p>
+              </div>
+            </div>
+            <div class="hv-form__feature">
+              <div class="hv-form__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="hv-form__feature-text">
+                <h4>Проверенные специалисты</h4>
+                <p>Опыт работы от 5 лет</p>
+              </div>
+            </div>
+            <div class="hv-form__feature">
+              <div class="hv-form__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="hv-form__feature-text">
+                <h4>Удобное время</h4>
+                <p>Работаем 07:00-21:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="hv-faq">
+    <div class="container">
+      <div class="hv-faq__header">
+        <h2 class="hv-faq__title">Часто задаваемые вопросы</h2>
+        <p class="hv-faq__subtitle">Ответы на популярные вопросы о выезде на дом</p>
+      </div>
+      <div class="hv-faq__list">
+        <div class="hv-faq__item">
+          <button class="hv-faq__question">
+            В какие районы возможен выезд?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="hv-faq__answer">
+            <p>Мы осуществляем выезд по всему Бишкеку и ближайшим пригородам в радиусе 20 км. Для отдалённых районов стоимость рассчитывается индивидуально.</p>
+          </div>
+        </div>
+        <div class="hv-faq__item">
+          <button class="hv-faq__question">
+            Можно ли вызвать медсестру ребёнку?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="hv-faq__answer">
+            <p>Да, наши специалисты работают с пациентами всех возрастов, включая новорождённых. Медсёстры имеют педиатрический опыт.</p>
+          </div>
+        </div>
+        <div class="hv-faq__item">
+          <button class="hv-faq__question">
+            Как быстро приходит результат?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="hv-faq__answer">
+            <p>Экспресс-тесты — 2 часа, стандартные анализы — 1-3 дня. Результаты приходят на email и доступны в личном кабинете.</p>
+          </div>
+        </div>
+        <div class="hv-faq__item">
+          <button class="hv-faq__question">
+            Можно ли оформить срочный выезд?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="hv-faq__answer">
+            <p>Да, доступна услуга срочного выезда в течение 1-2 часов. Уточняйте стоимость у оператора.</p>
+          </div>
+        </div>
+        <div class="hv-faq__item">
+          <button class="hv-faq__question">
+            Какие анализы можно сдать дома?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="hv-faq__answer">
+            <p>На дому можно сдать практически все виды анализов крови и мочи. Некоторые специфические исследования требуют клиники.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/actions.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/home-visit-ajax.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

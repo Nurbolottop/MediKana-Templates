@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акции и скидки — Медикана</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/promotions.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <a href="index.html" class="logo">Медикана</a>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск анализов, врачей, услуг...">
+          </div>
+          <button class="btn btn-primary">Личный кабинет</button>
+          <button class="menu-toggle"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav">
+          <a href="catalog.html" class="nav-link">Анализы</a>
+          <a href="doctors.html" class="nav-link">Запись к врачу</a>
+          <a href="home-visit.html" class="nav-link">Выезд на дом</a>
+          <a href="promotions.html" class="nav-link active">Акции</a>
+          <a href="centers.html" class="nav-link">Адреса</a>
+          <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="promo-hero">
+    <div class="container">
+      <div class="promo-hero__inner">
+        <div class="promo-hero__badge">Специальные предложения</div>
+        <h1 class="promo-hero__title">Экономьте на здоровье с <span>выгодой до 30%</span></h1>
+        <p class="promo-hero__text">Актуальные акции и скидки на комплексные обследования, анализы и консультации врачей</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-filters">
+    <div class="container">
+      <div class="promo-filters__inner">
+        <button class="promo-filter promo-filter--active">Все акции</button>
+        <button class="promo-filter">Скидки</button>
+        <button class="promo-filter">Комплексы</button>
+        <button class="promo-filter">Анализы</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-grid">
+    <div class="container">
+      <div class="promo-grid__inner">
+        
+        <article class="promo-card promo-card--featured">
+          <div class="promo-card__image-wrap">
+            <img src="assets/images/banners/promo-1.svg" alt="Комплексное обследование" class="promo-card__image">
+            <span class="promo-card__badge">Топ акция</span>
+            <div class="promo-card__discount"><span class="promo-card__discount-value">-20%</span></div>
+          </div>
+          <div class="promo-card__content">
+            <div class="promo-card__date">До 30 апреля 2026</div>
+            <h3 class="promo-card__title">Комплексное обследование со скидкой 20%</h3>
+            <p class="promo-card__desc">Полная диагностика организма: общий анализ крови, биохимия, гормоны, УЗИ и консультация терапевта</p>
+            <div class="promo-card__footer">
+              <a href="#" class="promo-card__btn promo-card__btn--primary">Подробнее</a>
+              <a href="#" class="promo-card__btn promo-card__btn--secondary">Записаться</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <div class="promo-card__image-wrap">
+            <img src="assets/images/banners/promo-2.svg" alt="Семейный пакет" class="promo-card__image">
+            <span class="promo-card__badge promo-card__badge--new">Новое</span>
+            <div class="promo-card__discount"><span class="promo-card__discount-value">-15%</span></div>
+          </div>
+          <div class="promo-card__content">
+            <div class="promo-card__date">Постоянная акция</div>
+            <h3 class="promo-card__title">Семейный пакет</h3>
+            <p class="promo-card__desc">Скидка 15% при заказе анализов для 3 и более членов семьи</p>
+            <div class="promo-card__footer">
+              <a href="#" class="promo-card__btn promo-card__btn--primary">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <div class="promo-card__image-wrap">
+            <img src="assets/images/banners/promo-3.svg" alt="Пенсионерам" class="promo-card__image">
+            <span class="promo-card__badge promo-card__badge--hot">Горячее</span>
+            <div class="promo-card__discount"><span class="promo-card__discount-value">-10%</span></div>
+          </div>
+          <div class="promo-card__content">
+            <div class="promo-card__date">До 31 мая 2026</div>
+            <h3 class="promo-card__title">Пенсионерам — скидка 10%</h3>
+            <p class="promo-card__desc">Предъявите пенсионное удостоверение для получения скидки</p>
+            <div class="promo-card__footer">
+              <a href="#" class="promo-card__btn promo-card__btn--primary">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Медикана</div>
+          <p class="footer-text">Современная медицинская лаборатория и клиника в Бишкеке.</p>
+        </div>
+        <div>
+          <div class="footer-title">Услуги</div>
+          <div class="footer-links">
+            <a href="catalog.html">Анализы</a>
+            <a href="doctors.html">Запись к врачу</a>
+            <a href="home-visit.html">Выезд на дом</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Информация</div>
+          <div class="footer-links">
+            <a href="centers.html">Адреса центров</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Медикана</div>
+    </div>
+  </footer>
+</body>
+</html>
